@@ -1,0 +1,17 @@
+{
+    "kozakgroup_uigridform_example": {
+        "column": {
+            "record_id": true,
+            "record_name": true,
+            "select_field": true,
+            "string_field": true,
+            "table_field": true,
+            "record_select_field": true,
+            "record_string_field": true,
+            "record_table_field": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

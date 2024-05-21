@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) KozakGroup, Inc. 2020. All rights reserved.
+  ~ Developed by Dmitry Draievskiy
+  -->
+
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+
+    <table name="kozakgroup_uigridform_example" resource="default" engine="innodb"
+           comment="KozakGroup Ui Grid&amp;Form Example">
+        <column xsi:type="int" name="record_id" padding="10" unsigned="true" nullable="false" identity="true"
+                comment="Record Id"/>
+        <column xsi:type="varchar" name="record_name" nullable="true" length="32" comment="Record Name"/>
+        <column xsi:type="smallint" name="record_select_field" padding="6" unsigned="true" nullable="false" identity="false"
+                comment="Record Select Field"/>
+        <column xsi:type="mediumtext" name="record_string_field" nullable="false" comment="Record String Field"/>
+        <column xsi:type="mediumtext" name="record_table_field" nullable="false" comment="Record Table Field"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="record_id"/>
+        </constraint>
+    </table>
+
+</schema>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) KozakGroup, Inc. 2020. All rights reserved.
+  ~ Developed by Dmitry Draievskiy
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="KozakGroup_UiGridForm::kozakgroup" title="KozakGroup UiGridForm" translate="title" sortOrder="90"/>
+        </resources>
+    </acl>
+</config>

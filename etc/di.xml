@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) KozakGroup, Inc. 2020. All rights reserved.
+  ~ Developed by Dmitry Draievskiy
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="KozakGroup\UiGridForm\Api\Data\RecordSearchResultsInterface"
+                type="KozakGroup\UiGridForm\Model\RecordSearchResults"
+    />
+    <preference for="KozakGroup\UiGridForm\Api\Data\RecordInterface"
+                type="KozakGroup\UiGridForm\Model\Record"
+    />
+    <preference for="KozakGroup\UiGridForm\Api\RecordRepositoryInterface"
+                type="KozakGroup\UiGridForm\Model\RecordRepository"
+    />
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="kozakgroup_uigridform_grid_listing_data_source" xsi:type="string">
+                    KozakGroup\UiGridForm\Model\ResourceModel\Record\Grid\Collection
+                </item>
+            </argument>
+        </arguments>
+    </type>
+
+</config>

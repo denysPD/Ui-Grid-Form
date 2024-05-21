@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) KozakGroup, Inc. 2020. All rights reserved.
+  ~ Developed by Dmitry Draievskiy
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="kozakgroup_uigridform" frontName="kozakgroup_uigridform">
+            <module name="KozakGroup_UiGridForm"/>
+        </route>
+    </router>
+</config>
